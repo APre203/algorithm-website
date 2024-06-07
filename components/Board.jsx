@@ -146,7 +146,7 @@ const Board = (props) => {
     }
     
     return(
-      <button className='grid grid-cols-3 grid-rows-3 bg-black' onClick={gameEnded}>
+      <button className='grid grid-cols-3 grid-rows-3' onClick={gameEnded}>
           <BButton isNotBot={isNotBot} isChosen={arrayColor[0][0]} inGame={inGame} boardState={p} stateChanger={setP} clickChanger={setClick} gb={gB} coords={{r:0,c:0}}/>
           <BButton isNotBot={isNotBot} isChosen={arrayColor[0][1]} inGame={inGame}  boardState={p} stateChanger={setP} clickChanger={setClick} gb={gB} coords={{r:0,c:1}}/>
           <BButton isNotBot={isNotBot} isChosen={arrayColor[0][2]}  inGame={inGame}  boardState={p} stateChanger={setP} clickChanger={setClick} gb={gB} coords={{r:0,c:2}}/>
@@ -165,13 +165,13 @@ const Board = (props) => {
         return (
           <div className='flex flex-col'>
 
-            <button className='btn bg-black text-white' onClick={()=>{setGB(matrix); setInGame(true);setClick(0); props.states[plyr](current => current+1);setArrayColor(initColor);p == 1 ? setTurn(true) : setTurn(false);}}> Play again</button>
+            <button className='btn bg-slate-400 dark:bg-black' onClick={()=>{setGB(matrix); setInGame(true);setClick(0); props.states[plyr](current => current+1);setArrayColor(initColor);p == 1 ? setTurn(true) : setTurn(false);}}> Play again</button>
           </div>
         )
       }else{
         return (
           <div className='flex flex-col'>
-            <button className='btn bg-black text-white' onClick={()=>{setGB(matrix);setInGame(true); setClick(0); setArrayColor(initColor);p == 1 ? setTurn(true) : setTurn(false);}}> Play again</button>
+            <button className='btn bg-slate-400 dark:bg-black' onClick={()=>{setGB(matrix);setInGame(true); setClick(0); setArrayColor(initColor);p == 1 ? setTurn(true) : setTurn(false);}}> Play again</button>
           </div>
         )
       }
