@@ -171,7 +171,7 @@ const Board = (props) => {
       }else{
         return (
           <div className='flex flex-col'>
-            <button className='btn' onClick={()=>{setGB(matrix);setInGame(true); setClick(0); setArrayColor(initColor);p == 1 ? setTurn(true) : setTurn(false);}}> Play again</button>
+            <button className='btn bg-black text-white' onClick={()=>{setGB(matrix);setInGame(true); setClick(0); setArrayColor(initColor);p == 1 ? setTurn(true) : setTurn(false);}}> Play again</button>
           </div>
         )
       }
