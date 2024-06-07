@@ -1,8 +1,8 @@
 import '@styles/globals.css';
 
 export const metadata = {
-    title: "Website",
-    description: "This is a website written in next.js"
+    title: "Algorithms Website",
+    description: "This is a website shows different algorithms"
 }  
 
 const Layout = ( {children} ) => {
