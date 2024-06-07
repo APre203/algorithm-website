@@ -145,53 +145,8 @@ const Board = (props) => {
       }
     }
     
-    if (!isNotBot){
-      // console.log("I am bot active", gB, p, ge, plyr, click)
-      if(p == 1){
-        
-        
-        // setP(0)
-        // loop:
-        // // AI Functionality here
-        // /*
-        // Given:
-        //   [x, x, x]  
-        //   [x, x, x]
-        //   [x, x, x]
-        
-        //   base case - win, loss, draw
-        //   look on recursive game-tree
-        //   backtrack
-
-        // Need:
-        //   MiniMax algorithm to decide where to place
-        //   */
-        
-        // for(let r in gB){
-        //   for(let c in gB[r]){
-        //     if (gB[r][c] < 0) {
-        //       if (ge){
-        //         break loop
-        //       }
-        //       // Make sure that when player 2 is active
-        //       // they cannot click the buttons 
-
-        //       // Now need to make sure when they turn off the button and the model is still thinking then it 
-        //       // stops thinking and just doesnt do anything
-
-        //       // setTimeout
-              
-        //       clickTile(r,c)
-        //       break loop
-        //     }
-        //   }
-        // }
-      }
-    }else{
-      // console.log("Turned off")
-    }
     return(
-      <button className='grid grid-cols-3 grid-rows-3' onClick={gameEnded}>
+      <button className='grid grid-cols-3 grid-rows-3 bg-black' onClick={gameEnded}>
           <BButton isNotBot={isNotBot} isChosen={arrayColor[0][0]} inGame={inGame} boardState={p} stateChanger={setP} clickChanger={setClick} gb={gB} coords={{r:0,c:0}}/>
           <BButton isNotBot={isNotBot} isChosen={arrayColor[0][1]} inGame={inGame}  boardState={p} stateChanger={setP} clickChanger={setClick} gb={gB} coords={{r:0,c:1}}/>
           <BButton isNotBot={isNotBot} isChosen={arrayColor[0][2]}  inGame={inGame}  boardState={p} stateChanger={setP} clickChanger={setClick} gb={gB} coords={{r:0,c:2}}/>
@@ -210,7 +165,7 @@ const Board = (props) => {
         return (
           <div className='flex flex-col'>
 
-            <button className='btn' onClick={()=>{setGB(matrix); setInGame(true);setClick(0); props.states[plyr](current => current+1);setArrayColor(initColor);p == 1 ? setTurn(true) : setTurn(false);}}> Play again</button>
+            <button className='btn bg-black text-white' onClick={()=>{setGB(matrix); setInGame(true);setClick(0); props.states[plyr](current => current+1);setArrayColor(initColor);p == 1 ? setTurn(true) : setTurn(false);}}> Play again</button>
           </div>
         )
       }else{

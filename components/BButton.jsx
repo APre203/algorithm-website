@@ -35,12 +35,12 @@ const BButton = (props) => {
         if (!props.isNotBot && p==1){
             // bot is active
             return (
-                <div className='btn rounded-none h-40 px-20 text-7xl text-white'>{characterMap[player]}</div>
+                <div className='btn rounded-none h-40 px-20 text-7xl text-white bg-black'>{characterMap[player]}</div>
                 // text-red-600  
               )
         }
         return (
-          <div className='btn rounded-none h-40 px-20 text-7xl text-white' onClick={updatePlayer}>{characterMap[player]}</div>
+          <div className='btn rounded-none h-40 px-20 text-7xl text-white bg-black' onClick={updatePlayer}>{characterMap[player]}</div>
           // text-red-600  
         )
     }else{
@@ -51,15 +51,15 @@ const BButton = (props) => {
         */
         if (props.isChosen == 1){
             return(
-                <div className='btn rounded-none h-40 px-20 text-7xl text-red-700' >{characterMap[player]}</div>
+                <div className='btn rounded-none h-40 px-20 text-7xl text-red-700 bg-black' >{characterMap[player]}</div>
             )
         }else if (props.isChosen == -1){
             return(
-                <div className='btn rounded-none h-40 px-20 text-7xl text-white' >{characterMap[player]}</div>
+                <div className='btn rounded-none h-40 px-20 text-7xl text-white bg-black' >{characterMap[player]}</div>
             )
         }else{
             return(
-                <div className='btn rounded-none h-40 px-20 text-7xl text-blue-500' >{characterMap[player]}</div>
+                <div className='btn rounded-none h-40 px-20 text-7xl text-blue-500 bg-black' >{characterMap[player]}</div>
             )
         }
     }
