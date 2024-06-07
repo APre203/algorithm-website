@@ -164,7 +164,7 @@ function min_value(board){
 function minimaxFirst(board){
     // console.log(fixUpBoard(board, firstTurn))
     let v = [null, null]
-    console.log("Who is going right now", player(board))
+    // console.log("Who is going right now", player(board))
     if (player(board) == O){ // trying to max
         // console.log("Acting as X")
         v = [-1 * Infinity, null]
@@ -185,7 +185,7 @@ function minimaxFirst(board){
             
         }
     }
-    console.log("Answer", v[1], "Before",board,"After",result(board,v[1]))
+    // console.log("Answer", v[1], "Before",board,"After",result(board,v[1]))
     return v[1]
 }
 

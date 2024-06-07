@@ -185,7 +185,7 @@ function minimaxSecond(board){
             
         }
     }
-    console.log("Answer", v[1], "Before",board,"After",result(board,v[1]))
+    // console.log("Answer", v[1], "Before",board,"After",result(board,v[1]))
     return v[1]
 }
 
