@@ -35,13 +35,11 @@ const BButton = (props) => {
         if (!props.isNotBot && p==1){
             // bot is active
             return (
-                <div className='btn rounded-none h-40 px-20 text-7xl bg-slate-40 dark:bg-black dark:text-white'>{characterMap[player]}</div>
-                // text-red-600  
+                <div className='btn rounded-none h-40 max-h-40 text-7xl bg-slate-40 dark:text-white dark:bg-slate-700'>{characterMap[player]}</div>
               )
         }
         return (
-          <div className='btn rounded-none h-40 px-20 text-7xl bg-slate-400 dark:bg-black dark:text-white' onClick={updatePlayer}>{characterMap[player]}</div>
-          // text-red-600  
+          <div className='btn rounded-none w-40 max-w-40 h-40 max-h-40 text-7xl bg-slate-40 dark:text-white dark:bg-slate-700' onClick={updatePlayer}>{characterMap[player]}</div>
         )
     }else{
         /*
@@ -51,15 +49,15 @@ const BButton = (props) => {
         */
         if (props.isChosen == 1){
             return(
-                <div className='btn rounded-none h-40 px-20 text-7xl text-red-700 bg-slate-400 dark:bg-black' >{characterMap[player]}</div>
+                <div className='btn rounded-none w-40 max-w-40 h-40 max-h-40 text-7xl text-red-700 bg-slate-400 dark:bg-slate-700' >{characterMap[player]}</div>
             )
         }else if (props.isChosen == -1){
             return(
-                <div className='btn rounded-none h-40 px-20 text-7xl dark:text-white bg-slate-400 dark:bg-black' >{characterMap[player]}</div>
+                <div className='btn rounded-none w-40 max-w-40 h-40 max-h-40 text-7xl dark:text-white bg-slate-400 dark:bg-slate-700' >{characterMap[player]}</div>
             )
         }else{
             return(
-                <div className='btn rounded-none h-40 px-20 text-7xl dark:text-blue-500 text-blue-700 bg-slate-400 dark:bg-black' >{characterMap[player]}</div>
+                <div className='btn rounded-none w-40 max-w-40 h-40 max-h-40 text-7xl dark:text-blue-500 text-blue-700 bg-slate-400 dark:bg-slate-700' >{characterMap[player]}</div>
             )
         }
     }

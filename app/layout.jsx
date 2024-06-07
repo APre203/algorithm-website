@@ -1,7 +1,8 @@
+import Navbar from '@components/Navbar';
 import '@styles/globals.css';
 
 export const metadata = {
-    title: "Algorithms Website",
+    title: "Algorithm Website",
     description: "This is a website shows different algorithms"
 }  
 
@@ -11,7 +12,7 @@ const Layout = ( {children} ) => {
         <body>
             {/* main place for all the pages */}
             <main className='app min-h-screen'>
-                {/* <Nav /> */}
+                <Navbar/>
                 {children}
                 {/* <Footer /> */}
             </main>

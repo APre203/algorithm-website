@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react"
-import Board from "@components/Board"
-import ScoreBoard from "@components/ScoreBoard"
+import Board from "@components/tic/Board"
+import ScoreBoard from "@components/tic/ScoreBoard"
 
 const Home = () => {
   const [player1, setPlayer1] = useState(0);
@@ -12,7 +12,7 @@ const Home = () => {
   const botStatus = !isBotActive ? "Bot Active ( Player 2 )"  : "Activate Bot" 
   return (
     <section className="w-full flex flex-col text-center">
-        <h1 className="head_text mb-10">
+        <h1 className="mb-10">
             Tik Tak Toe Game - MiniMax Algorithm
         </h1>
         {/* Who is up */}
