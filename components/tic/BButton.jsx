@@ -35,11 +35,11 @@ const BButton = (props) => {
         if (!props.isNotBot && p==1){
             // bot is active
             return (
-                <div className='btn rounded-none h-40 max-h-40 text-7xl bg-slate-40 dark:text-white dark:bg-slate-700'>{characterMap[player]}</div>
+                <div className='btn rounded-none h-40 max-h-40 text-7xl bg-slate-400 dark:text-white dark:bg-slate-700'>{characterMap[player]}</div>
               )
         }
         return (
-          <div className='btn rounded-none w-40 max-w-40 h-40 max-h-40 text-7xl bg-slate-40 dark:text-white dark:bg-slate-700' onClick={updatePlayer}>{characterMap[player]}</div>
+          <div className='btn rounded-none w-40 max-w-40 h-40 max-h-40 text-7xl bg-slate-400 dark:text-white dark:bg-slate-700' onClick={updatePlayer}>{characterMap[player]}</div>
         )
     }else{
         /*
