@@ -23,13 +23,13 @@ const GButton = (props) => {
   const boardState = props.dataMap.boardState
   const buttonState = props.dataMap.buttonState
   const colorMapper = {
-    0:'bg-slate-400 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600', // untouched
-    1:'bg-stone-500 dark:bg-stone-800 hover:bg-stone-400 dark:hover:bg-stone-700', // walls
-    2:'bg-sky-400 dark:bg-sky-800 hover:bg-sky-300 dark:hover:bg-sky-700', // start
-    3:'bg-sky-400 dark:bg-sky-800 hover:bg-sky-300 dark:hover:bg-sky-700', // end
-    4:'bg-red-400 dark:bg-red-600 hover:bg-red-300 dark:hover:bg-red-500', // inside map
-    5:'bg-red-300 dark:bg-red-500 hover:bg-red-200 dark:hover:bg-red-400', // checking
-    6:'bg-green-300 dark:bg-green-500 hover:bg-green-200 dark:hover:bg-green-400' // showing path
+    0:'bg-slate-400 dark:bg-slate-700 hover:bg-slate-500 dark:hover:bg-slate-600', // untouched
+    1:'bg-stone-500 dark:bg-stone-800 hover:bg-stone-600 dark:hover:bg-stone-700', // walls
+    2:'bg-sky-400 dark:bg-sky-800 hover:bg-sky-500 dark:hover:bg-sky-700', // start
+    3:'bg-sky-400 dark:bg-sky-800 hover:bg-sky-500 dark:hover:bg-sky-700', // end
+    4:'bg-red-400 dark:bg-red-600 hover:bg-red-500 dark:hover:bg-red-500', // inside map
+    5:'bg-red-300 dark:bg-red-500 hover:bg-red-400 dark:hover:bg-red-400', // checking
+    6:'bg-green-300 dark:bg-green-500 hover:bg-green-400 dark:hover:bg-green-400' // showing path
     }
     const cord = [props.coords.r, props.coords.c]
       useEffect(() =>{
