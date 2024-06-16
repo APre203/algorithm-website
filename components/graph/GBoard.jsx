@@ -87,7 +87,7 @@ const GBoard = (props) => {
         </div>
         </div>)
       }else{
-        return(<div><button className='btn mb-2' onClick={handlePlayAgain}>Play Again</button></div>)
+        return(<div><button className='btn mb-2' onClick={handlePlayAgain}>Start Again</button></div>)
       }
       
     }
