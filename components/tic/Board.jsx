@@ -112,7 +112,7 @@ const Board = (props) => {
       }
     }else{
       return (
-        <h2> It is {p===0 ? "Player 1" : "Player 2"}'s turn | Current: {click}</h2>
+        <h2 > It is {p===0 ? "Player 1" : "Player 2"}'s turn | Current: {click}</h2>
       )
     }
   }
