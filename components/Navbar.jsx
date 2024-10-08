@@ -17,6 +17,9 @@ const Navbar = () => {
                 <li>
                 <Link href="/graphing" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white hover:text-blue-400 md:dark:text-blue-500" aria-current="page">Graphing</Link>
                 </li>
+                <li>
+                <Link href="/wordle" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white hover:text-blue-400 md:dark:text-blue-500" aria-current="page">Wordle</Link>
+                </li>
             </ul>
             </div>
         </div>
